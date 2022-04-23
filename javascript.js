@@ -2,15 +2,15 @@ const dropDown = document.querySelector("#drop-down")
 const dropDownButtons = document.querySelector("#drop-down-container")
 
 dropDown.addEventListener('click', function(){
-    toggle()
+    toggle(dropDownButtons)
 })
 
 
-function toggle() {
-    if (dropDownButtons.style.display == 'flex') {
-        dropDownButtons.style.display = 'none'
+function toggle(x) {
+    if (x.style.display == 'flex') {
+        x.style.display = 'none'
     } else {
-        dropDownButtons.style.display = 'flex';
+        x.style.display = 'flex';
     }
 }
 
